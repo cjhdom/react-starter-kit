@@ -44,6 +44,7 @@ hotClient.useCustomOverlay({
 hotClient.setOptionsAndConnect({
   name: 'client',
   reload: true,
+  path: '/__new_url',
 });
 
 startReportingRuntimeErrors({

@@ -128,7 +128,9 @@ async function start() {
   );
 
   // https://github.com/glenjamin/webpack-hot-middleware
-  server.use(webpackHotMiddleware(clientCompiler, { log: false }));
+  server.use(
+    webpackHotMiddleware(clientCompiler, { log: false, path: '/__new_url' }),
+  );
 
   let appPromise;
   let appPromiseResolve;
